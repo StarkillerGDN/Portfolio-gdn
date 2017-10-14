@@ -1,0 +1,69 @@
+/*
+ * Start Bootstrap - Full Slider (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+html,
+body {
+    height: 100%;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+/* Nav */
+#myNav{
+    float: right
+}
+
+/* Content */
+#quiSuisJe{
+    width: 50%;
+    display: block;
+    margin-left: 25%;
+}
+h1{
+    text-align: center;
+}
+.lineTitle{
+    width: 50%;
+    height: 8px;
+    margin-left: auto; /* alignement horizontale grace au 2 margins*/ 
+    margin-right: auto;
+    background-color: grey;
+    color: grey;
+    border: 0 none;
+}
+.img-circle{
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+}
+footer {
+    margin: 50px 0;
+}
+
+/* Changements lorsque que l'appareil est un smartphone */
+@media (max-width: 768px) {
+    .lineTitle{
+        width: 100%;
+    }
+}
