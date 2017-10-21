@@ -17,10 +17,17 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/animate.css">
     <link href="css/main.css" rel="stylesheet">
 
     <!-- Custom icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Custom fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,20 +38,21 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="0">
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav" id="btnNav">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
+                    <span class="icon-bar test"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand textillate" href="#"><span>Geogeo qui dev'</span></a>
+
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="myNav">
@@ -115,23 +123,25 @@
         <!-- Section présentation -->
         <section class="row" id="presentation">
             <div class="col-md-12">
-                <h1>Présentation</h1>
+                <h1><span class="glyphicon glyphicon-user"></span>Présentation</h1>
                 <hr class="lineTitle">
                 <div class="row">
                     <div class="col-md-12" id="quiSuisJe" > <!-- A CHANGER, aligner au milieu quand c'est un petit ecran -->
                         <h2>Qui suis je ?</h2>
-                        <p>Je m'appelle  <b>Geoffrey DAHURON</b> </p>
-                        <p> Qui consequat dolor sit eu ut eu ad. Nostrud officia sit veniam ut est eu.
-                         Amet ex irure excepteur eiusmod enim magna labore enim esse fugiat.
-                         ariatur aliquip aliquip culpa mollit anim. Et reprehenderit nisi 
-                         veniam voluptate magna in aliqua commodo consectetur enim anim ea 
-                         ullamco aute. Est eiusmod adipisicing amet cupidatat excepteur 
-                         exercitation consectetur sunt aliquip et dolor sit. Id magna in est occaecat aute labore nisi laboris tempor. Anim nostrud et magna incididunt
-                         nisi magna consequat ullamco nulla enim eiusmod culpa fugiat. 
-                         Culpa voluptate sunt excepteur exercitation ea.</p>
+                        <p>Mon nom est <b>Geoffrey DAHURON</b>, je suis actuellement étudiant en première année de Master en ingénierie du Web,
+                        à l'ESGI. Je fais du développement web depuis maintenant un an et ça me passionne de plus en plus !</p>
+                        <p>Je suis également un grand fan de Star Wars, de jeux vidéos et de hardware.</p>
+                        <p>Je suis motivé, rigoureux, persévérant et désireux d'apprendre. </p>  
                     </div>
-                    <div class="col-md-12">
-                        <img src="img/profile-test.png" class="img-circle" alt="photo de Geoffrey DAHURON" width="200" height="200"> 
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="img/profil.jpg" class="img-circle" alt="photo de Geoffrey DAHURON">
+                        </div>
+                    </div>
+                    <div class="row" id="test">
+                        <div class="col-md-12" id="dlCV">
+                            <a href="doc/CV.pdf" class="btn btn-primary" role="button" target="_blank">Télécharger CV</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -142,6 +152,43 @@
             <div class="col-md-12">
                 <h1>Mes compétences</h1>
                 <hr class="lineTitle">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12" id="web">
+                        <h2>Web</h2>
+                        <div class="skillbar clearfix " data-percent="80%">
+                            <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+                            <div class="skillbar-bar" style="background: #e67e22;"></div>
+                            <div class="skill-bar-percent">30%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12" id="mobile">
+                        <h2>Mobile</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item">HTML</li>
+                            <li class="list-group-item">HTML</li>
+                            <li class="list-group-item">HTML</li>
+                            <li class="list-group-item">HTML</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-xs-12" id="autres">
+                        <h2>Autres</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item">HTML</li>
+                            <li class="list-group-item">HTML</li>
+                            <li class="list-group-item">HTML</li>
+                            <li class="list-group-item">HTML</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-xs-12" id="logiciels">
+                        <h2>Logiciels</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item">HTML</li>
+                            <li class="list-group-item">HTML</li>
+                            <li class="list-group-item">HTML</li>
+                            <li class="list-group-item">HTML</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -152,12 +199,12 @@
                 <hr class="lineTitle">
             </div>
         </section>
-
+    
         <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; 2017 Geoffrey DAHURON. Conçu par Geoffrey DAHURON</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -172,6 +219,9 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <!-- Scripts animation texte -->
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/jquery.textillate.js"></script>
     <!-- script js perso -->
     <script src="js/main.js"></script>
 
