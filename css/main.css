@@ -136,6 +136,11 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
+#skillsLayout{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
 #competences h2{
     text-align: center;
 }
@@ -174,7 +179,7 @@ h1{
 	font-weight:bold;
 	font-size:13px;
 	color:#ffffff;
-	background: slategray;
+	background: #56739A;
 	-webkit-border-top-left-radius:3px;
 	-webkit-border-bottom-left-radius:4px;
 	-moz-border-radius-topleft:3px;
@@ -185,7 +190,7 @@ h1{
 
 .skillbar-title span {
 	display:block;
-	background:rgba(0, 0, 0, 0.1);
+	
 	padding:0 20px;
 	height:35px;
 	line-height:35px;
@@ -232,6 +237,10 @@ footer {
     /* General */
     h1{
         width: 100%;
+        font-size: 2.1em;
+    }
+    h2{
+        font-size: 1.8em;
     }
     .lineTitle{
         width: 100%;
@@ -252,7 +261,9 @@ footer {
     }
 
     /* Competences */
-    
+    #competences{
+        width: initial;
+    }
 
     /* Contact */
 
