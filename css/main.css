@@ -30,6 +30,86 @@ body {
     background-size: cover;
     -o-background-size: cover;
 }
+#placeholderProjet1{
+    background-image: url('http://via.placeholder.com/1920x1080.png/56739A/ffffff?text=Book-me');
+}
+#placeholderProjet2{
+    background-image: url('http://via.placeholder.com/1920x1080.png/56739A/ffffff?text=Challenge Me');
+}
+#placeholderProjet3{
+
+}
+#placeholderProjet4{
+
+}
+#placeholderProjet5{
+
+}
+#placeholderProjet6{
+
+}
+/************************* Modal *************************/
+.lienModal{
+    display: block;
+}
+.infosModal i{
+    position: absolute; 
+    margin-left: 15px;
+}
+.modal-header, .modal-header h2, .close{
+    background-color: #56739A;
+    text-align: center;
+    color: white !important;
+}
+
+.modal-content img{
+    width: 100%;
+}
+.modal-content p{
+    text-align: justify;
+}
+.modal-content blockquote{
+    font-style: italic;
+}
+.modal-footer .btn-primary{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:  #56739A;
+}
+.langages{
+    display: inline-block;
+}
+#imgProjet1{
+    border: 1px solid #0B1616;
+    border-radius: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:45%; 
+    height: 35%;
+}
+#imgProjet2{
+    border: 1px solid #0B1616;
+    border-radius: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:45%; 
+    height: 1%; 
+}
+#swiftLogo{
+    width: 30px; 
+    height: 30px; 
+    margin-bottom: 8px; 
+    margin-left: 15px;
+}
+#androidLogo{
+    width: 50px; 
+    height: 50px; 
+    margin-bottom: 8px; 
+    margin-left: 15px;
+}
 /************************* Navigation *************************/
 .navbar{
     background-color: slategrey;
@@ -67,13 +147,19 @@ section{
     left: 0;
     right: 0;
 }
-section p{
+section p,
+.modal-content p
+{
     font-family: 'Questrial', 'sans-serif';
     font-size: 17px;
 }
 section h1,
 section h2,
-section h3{
+section h3,
+.modal-content h2,
+.modal-content h3,
+.modal-content h4
+{
     font-family: 'Rubik', sans-serif;
     color: #0B1616;
 }
