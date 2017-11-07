@@ -89,44 +89,44 @@
         <div class="carousel-inner">
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" id="placeholderProjet1"><a class="fill lienModal" href="#" data-toggle="modal" data-target="#projet1"></a></div>
+                <div class="fill" id="placeholderBookMe"><a class="fill lienModal" href="#" data-toggle="modal" data-target="#bookme"></a></div>
+                <div class="carousel-caption">
+                    <h2>2017</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" id="placeholderGeeps"><a class="fill lienModal" href="#" data-toggle="modal" data-target="#geeps"></a></div>
                 <div class="carousel-caption">
                     <h2>2017</h2>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" id="placeholderProjet2"><a class="fill lienModal" href="#" data-toggle="modal" data-target="#projet2"></a></div>
+                <div class="fill" id="placeholderChallengeMe"><a class="fill lienModal" href="#" data-toggle="modal" data-target="#challengeme"></a></div>
                 <div class="carousel-caption">
                     <h2>2017</h2>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" id="placeholderProjet3"><a class="fill lienModal" href="#" data-toggle="modal" data-target="#projet3"></a></div>
+                <div class="fill" id="placeholderPokebattle"><a class="fill lienModal" href="#" data-toggle="modal" data-target="#pokebattle"></a></div>
                 <div class="carousel-caption">
-                    <h2>Caption 3</h2>
+                    <h2>2016-2017</h2>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" id="placeholderProjet4"><a class="fill lienModal" href="#" data-toggle="modal" data-target="#projet4"></a></div>
+                <div class="fill" id="placeholderCdfRobotique"><a class="fill lienModal" href="#" data-toggle="modal" data-target="#cdfrobotique"></a></div>
                 <div class="carousel-caption">
-                    <h2>Caption 4</h2>
+                    <h2>2015-2016</h2>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" id="placeholderProjet5"><a class="fill lienModal" href="#" data-toggle="modal" data-target="#projet5"></a></div>
+                <div class="fill" id="placeholderCommandeRobot"><a class="fill lienModal" href="#" data-toggle="modal" data-target="#commanderobot"></a></div>
                 <div class="carousel-caption">
-                    <h2>Caption 5</h2>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" id="placeholderProjet6"><a class="fill lienModal" href="#" data-toggle="modal" data-target="#projet6"></a></div>
-                <div class="carousel-caption">
-                    <h2>Caption 6</h2>
+                    <h2>2013-2014</h2>
                 </div>
             </div>
         </div>
@@ -144,8 +144,8 @@
     <!-- Page Content -->
     <div class="container">
 
-        <!-- Modal Projet 1-->
-        <div id="projet1" class="modal fade" role="dialog">
+        <!-- Book-me -->
+        <div id="bookme" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -153,13 +153,13 @@
                         <h2>Book-me</h2>
                     </div>
                     <div class="modal-body">
-                        <img src="img/projet1.PNG" alt="projet BOOK-ME" id="imgProjet1">
+                        <img src="img/bookMe.PNG" alt="projet BOOK-ME" id="imgBookMe">
                         <h3>Description fonctionnelle</h3>
                         <p>Application demandé par un intermittent du spectacle.<br>
                         Elle doit aider à la fabrication de plannings de post-productions audiovisuelles, les créer, les remplir,
                         les visualiser et les modifier. Pour cela, elle doit permettre la gestion de <span id="pige" style="font-weight: bold;">piges</span> et des intermittents.
                         </p>
-                        <blockquote>Pige : Terme hérité du journalisme et définissant une mission dans une production audiovisuelle.</blockquote>
+                        <blockquote style="visibility: hidden; display: none">Pige : Terme hérité du journalisme et définissant une mission dans une production audiovisuelle.</blockquote>
                         <div class="infosModal">
                             <h3>Cadre : <i class="fa fa-university" aria-hidden="true"></i></h3> 
                             <h3>Date : mars à juin 2017</h3>
@@ -173,8 +173,39 @@
             </div>
         </div>
 
-         <!-- Modal Projet 2-->
-        <div id="projet2" class="modal fade" role="dialog">
+        <!-- Formulaire GEEPS -->
+        <div id="geeps" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2>Formulaire de visite GEEPS</h2>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/visiteGeeps.PNG" alt="image projet GEEPS" id="imgGeeps">
+                        <h3>Description fonctionnelle</h3>
+                        <p>Formulaire crée pour le laboratoire du GEEPS, Orsay. Il permet à une personne de prévenir, qu'il va faire une visite. Le formulaire une fois
+                            soumis, envoi un mail à l'administrateur avec les coordonnées de la personne en CSV et en PDF, et envoi un mail de confirmation au visiteur.
+                        </p>
+                        <div class="infosModal">
+                            <h3>Cadre : <i class="fa fa-university" aria-hidden="true"></i></h3> 
+                            <h3>Date : avril 2017 à mai 2017</h3>
+                            <h3 class="langages">Langage : </h3> 
+                            <img src="img/djangoLogo.png" alt="logo langage django" id="djangoLogo"> 
+                            <img src="img/htmlLogo.png" alt="logo langage html" id="htmlLogo"> 
+                            <img src="img/cssLogo.png" alt="logo langage css" id="cssLogo">
+                            <img src="img/bootstrapLogo.jpg" alt="logo bootstrap" id="bootstrapLogo">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Challenge me -->
+        <div id="challengeme" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -182,7 +213,7 @@
                         <h2>Challenge Me</h2>
                     </div>
                     <div class="modal-body">
-                        <img src="img/projet2.PNG" alt="projet CHALLENGE ME" id="imgProjet2">
+                        <img src="img/challengeMe.PNG" alt="projet CHALLENGE ME" id="imgChallengeMe">
                         <h3>Description fonctionnelle</h3>
                         <p>Cette application est un quizz pour les smartphones Android sur différents thèmes comme la musique, les monuments ou encore les films.
                         <br> En fonction du niveau de difficulté,la façon de jouer au jeu est différente. Pour le niveau facile, 4 réponses sont possibles. Pour le niveau 
@@ -202,22 +233,25 @@
             </div>
         </div>
 
-        <!-- Modal Projet 3-->
-        <div id="projet3" class="modal fade" role="dialog">
+        <!-- Pokebattle -->
+        <div id="pokebattle" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h2>Projet 1</h2>
+                        <h2>Pokebattle</h2>
                     </div>
                     <div class="modal-body">
-                        <img src="img/test.png" alt="projet-image">
+                        <img src="img/pokebattle.png" alt="projet POKEBATTLE" id="imgPokebattle">
                         <h3>Description fonctionnelle</h3>
-                        <p>Laboris Lorem consectetur nostrud amet dolore excepteur. Reprehenderit consectetur minim proident veniam laborum anim aliqua do. Ullamco anim sit aliqua irure nostrud reprehenderit nostrud quis voluptate aute. Nulla pariatur id nulla nulla aliquip dolor est mollit officia mollit ea ipsum. Ea consequat nostrud amet duis minim est elit sit nostrud nostrud aliquip.</p>
+                        <p>Mini jeu sur le thème de pokemon, avec un style similaire aux premières versions sorties sur Gameboy (tour par tour).<br>
+                            Le joueur peut personnaliser son avatar et choisir son pokemon pour le combat. Pour faire une partie, il faut 2 joueurs connectés en bluetooh.
+                            Les 2 joueurs ont une barre de vie et une barre de "mana", cette dernière permettant d'utiliser des compétences qui sont aux nombre de 3.
+                        </p>
                         <div class="infosModal">
                             <h3>Cadre : <i class="fa fa-university" aria-hidden="true"></i></h3> 
-                            <h3>Date : 2017</h3>
-                            <h3>Langage : </h3>
+                            <h3>Date : novembre 2016 à janvier 2017</h3>
+                            <h3 class="langages">Langage : </h3> <img src="img/appinventor.png" alt="Logo langage appinventor" class="appinventorLogo">
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -227,22 +261,27 @@
             </div>
         </div>
 
-        <!-- Modal Projet 4-->
-        <div id="projet4" class="modal fade" role="dialog">
+        <!-- CDF de Robotique -->
+        <div id="cdfrobotique" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h2>Projet 1</h2>
+                        <h2>CDF de Robotique</h2>
                     </div>
                     <div class="modal-body">
-                        <img src="img/test.png" alt="projet-image">
+                        <img src="img/cdfRobotique.PNG" alt="projet-image" id="imgCdfRobotique">
                         <h3>Description fonctionnelle</h3>
-                        <p>Laboris Lorem consectetur nostrud amet dolore excepteur. Reprehenderit consectetur minim proident veniam laborum anim aliqua do. Ullamco anim sit aliqua irure nostrud reprehenderit nostrud quis voluptate aute. Nulla pariatur id nulla nulla aliquip dolor est mollit officia mollit ea ipsum. Ea consequat nostrud amet duis minim est elit sit nostrud nostrud aliquip.</p>
+                        <p>Le thème de cette coupe de France de robotique était la plage. Nous avons crée, en partenariat avec l'école des Mines de Paris
+                            et le lycée Léonard de Vinci de Melun, 2 robots devant réaliser divers objectifs comme ramasser des coquillages, construire un chateau de sable
+                            ou encore pêcher des poissons. Le BTS SNIR devait s'occuper de la programmation des cartes controlleurs ainsi que des différents capteurs des robots.
+                            L'école des Mines s'occupait de la logistique et le BTS Mécanique de la modélisation et usinage des différentes pièces pour les robots.<br>
+                            Nous avons terminé 17ème sur plus d'une centaine de participants.
+                        </p>
                         <div class="infosModal">
                             <h3>Cadre : <i class="fa fa-university" aria-hidden="true"></i></h3> 
-                            <h3>Date : 2017</h3>
-                            <h3>Langage : </h3>
+                            <h3>Date : decembre 2015 à mai 2016</h3>
+                            <h3 class="langages">Langage : </h3> <img src="img/cSharp.png" alt="Logo langage C#" id="cSharpLogo">
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -252,47 +291,24 @@
             </div>
         </div>
 
-        <!-- Modal Projet 5-->
-        <div id="projet5" class="modal fade" role="dialog">
+        <!-- Commande robot -->
+        <div id="commanderobot" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h2>Projet 1</h2>
+                        <h2>Commande pour robot mindstorm</h2>
                     </div>
                     <div class="modal-body">
-                        <img src="img/test.png" alt="projet-image">
+                        <img src="img/commandeRobot.png" alt="projet Ramasseur de balle Mindstorm" id="imgCommandeRobot">
                         <h3>Description fonctionnelle</h3>
-                        <p>Laboris Lorem consectetur nostrud amet dolore excepteur. Reprehenderit consectetur minim proident veniam laborum anim aliqua do. Ullamco anim sit aliqua irure nostrud reprehenderit nostrud quis voluptate aute. Nulla pariatur id nulla nulla aliquip dolor est mollit officia mollit ea ipsum. Ea consequat nostrud amet duis minim est elit sit nostrud nostrud aliquip.</p>
+                        <p>Cette application permet d'activer le cycle de ramassage d'un robot ramasseur de balle que nous avons crée avec mon groupe de projet.
+                            Elle possède plusieurs fonctionnalités comme la possibilité d'arrêter le robot en urgence et se connecter au robot en bluetooth.
+                        </p>
                         <div class="infosModal">
                             <h3>Cadre : <i class="fa fa-university" aria-hidden="true"></i></h3> 
-                            <h3>Date : 2017</h3>
-                            <h3>Langage : </h3>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Projet 6-->
-        <div id="projet6" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h2>Projet 1</h2>
-                    </div>
-                    <div class="modal-body">
-                        <img src="img/test.png" alt="projet-image">
-                        <h3>Description fonctionnelle</h3>
-                        <p>Laboris Lorem consectetur nostrud amet dolore excepteur. Reprehenderit consectetur minim proident veniam laborum anim aliqua do. Ullamco anim sit aliqua irure nostrud reprehenderit nostrud quis voluptate aute. Nulla pariatur id nulla nulla aliquip dolor est mollit officia mollit ea ipsum. Ea consequat nostrud amet duis minim est elit sit nostrud nostrud aliquip.</p>
-                        <div class="infosModal">
-                            <h3>Cadre : <i class="fa fa-university" aria-hidden="true"></i></h3> 
-                            <h3>Date : 2017</h3>
-                            <h3>Langage : </h3>
+                            <h3>Date : novembre 2013 à mai 2014</h3>
+                            <h3 class="langages">Langage : </h3> <img src="img/appinventor.png" alt="logo langage appinventor"  class="appinventorLogo">
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -322,7 +338,7 @@
                     </div>
                     <div class="row" id="test">
                         <div class="col-md-12" id="dlCV">
-                            <a href="doc/CV.pdf" class="btn btn-primary" role="button" target="_blank">Télécharger CV</a>
+                            <a href="doc/cv.pdf" class="btn btn-primary" role="button" target="_blank">Télécharger CV</a>
                         </div>
                     </div>
                 </div>
@@ -428,7 +444,29 @@
             <div class="col-md-12">
                 <h1><span class="fa fa-envelope-o"></span>Contactez-moi</h1>
                 <hr class="lineTitle">
-                
+                <div id="formulaire" class="row">
+                    <div id="succes" class="alert alert-success alert-dismissable col-md-12">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close" >&times;</a>
+                        <strong>Succès!</strong> Votre message a bien été envoyé. <!-- Mettre icone font awesomme -->
+                    </div>
+                    <div id="echec" class="alert alert-danger alert-dismissable col-md-12">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close" >&times;</a>
+                        <strong>Attention !</strong>Tout les champs doivent être rempli.
+                    </div>
+                    <form  class="col-md-12" action="contact/contact.php" method="post">
+                        <div class="form-group col-md-6">
+                            <input class="form-control" type="text" name="nomPrenom" id="nomPrenom" placeholder="Nom et Prenom">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input class="form-control" type="email" name="mail" id="mail" placeholder="E-mail">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Message" maxlength=512></textarea>
+                        </div>
+                        <div id="boutonEnvoyer" class="col-md-12">
+                            <button type="submit" class="btn btn-primary" id="submit">Envoyer</button>
+                        </div>
+                    </form>
             </div>
         </section>
         

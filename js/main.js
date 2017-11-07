@@ -33,3 +33,16 @@ function loadSkillbar(){
         },3000);
     });
 }
+
+//Modal hover pige
+$('#pige').hover(
+    function(){
+        $('blockquote').css('visibility', 'visible');
+        $('blockquote').css('display', 'block');
+    },
+    function(){
+        $('blockquote').css('visibility', 'hidden');
+        $('blockquote').css('display', 'none');
+        
+    }
+);

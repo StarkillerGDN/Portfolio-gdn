@@ -1,9 +1,3 @@
-/*
- * Start Bootstrap - Full Slider (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
 html,
 body {
     height: 100%;
@@ -30,24 +24,24 @@ body {
     background-size: cover;
     -o-background-size: cover;
 }
-#placeholderProjet1{
-    background-image: url('http://via.placeholder.com/1920x1080.png/56739A/ffffff?text=Book-me');
-}
-#placeholderProjet2{
-    background-image: url('http://via.placeholder.com/1920x1080.png/56739A/ffffff?text=Challenge Me');
-}
-#placeholderProjet3{
-
-}
-#placeholderProjet4{
-
-}
-#placeholderProjet5{
-
-}
-#placeholderProjet6{
-
-}
+    #placeholderBookMe{
+        background-image: url('http://via.placeholder.com/1920x1080.png/56739A/ffffff?text=Book-me');
+    }
+    #placeholderChallengeMe{
+        background-image: url('http://via.placeholder.com/1920x1080.png/56739A/ffffff?text=Challenge Me');
+    }
+    #placeholderPokebattle{
+        background-image: url('http://via.placeholder.com/1920x1080.png/56739A/ffffff?text=Pokebattle');
+    }
+    #placeholderCdfRobotique{
+        background-image: url('http://via.placeholder.com/1920x1080.png/56739A/ffffff?text=CDF de Robotique');
+    }
+    #placeholderGeeps{
+        background-image: url('http://via.placeholder.com/1920x1080.png/56739A/ffffff?text= Visite GEEPS');
+    }
+    #placeholderCommandeRobot{
+        background-image: url('http://via.placeholder.com/1920x1080.png/56739A/ffffff?text=Commande robot');
+    }
 /************************* Modal *************************/
 .lienModal{
     display: block;
@@ -56,7 +50,7 @@ body {
     position: absolute; 
     margin-left: 15px;
 }
-.modal-header, .modal-header h2, .close{
+.modal-header, .modal-header h2{
     background-color: #56739A;
     text-align: center;
     color: white !important;
@@ -80,7 +74,11 @@ body {
 .langages{
     display: inline-block;
 }
-#imgProjet1{
+#imgBookMe, 
+#imgChallengeMe,
+#imgCdfRobotique,
+#imgPokebattle,
+#imgCommandeRobot{
     border: 1px solid #0B1616;
     border-radius: 1%;
     display: block;
@@ -89,18 +87,26 @@ body {
     width:45%; 
     height: 35%;
 }
-#imgProjet2{
+#imgGeeps{
     border: 1px solid #0B1616;
     border-radius: 1%;
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    width:45%; 
-    height: 1%; 
+    margin-right: auto;     
 }
-#swiftLogo{
+#swiftLogo,
+.appinventorLogo,
+#djangoLogo,
+#htmlLogo,
+#cssLogo{
     width: 30px; 
     height: 30px; 
+    margin-bottom: 8px; 
+    margin-left: 15px;
+}
+#bootstrapLogo{
+    width: 45px; 
+    height: 45px; 
     margin-bottom: 8px; 
     margin-left: 15px;
 }
@@ -109,6 +115,15 @@ body {
     height: 50px; 
     margin-bottom: 8px; 
     margin-left: 15px;
+}
+#cSharpLogo{
+    width: 30px; 
+    height: 30px; 
+    margin-bottom: 8px; 
+    margin-left: 15px;
+}
+#pige:hover{
+    color: #56739A;
 }
 /************************* Navigation *************************/
 .navbar{
@@ -313,6 +328,29 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
+#formulaire{
+    display: block;
+    width: 76%;
+    margin-left: auto;
+    margin-right: auto;
+}
+textarea{
+    resize: none;
+}
+#boutonEnvoyer button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #56739A;
+}
+#succes,
+#echec{
+    width: 92%;
+    margin-left: 4%;
+    /*visibility: hidden;
+    display: none; */
+}
+
 /************************* Footer *************************/
 footer {
     margin: 50px 0;
@@ -320,6 +358,25 @@ footer {
 
 /************************* Media queries *************************/
 @media (max-width: 768px) {
+    /* Modal */
+    #placeholderBookMe{
+        background-image: url('http://via.placeholder.com/768.png/56739A/ffffff?text=Book-me');
+    }
+    #placeholderChallengeMe{
+        background-image: url('http://via.placeholder.com/768.png/56739A/ffffff?text=Challenge Me');
+    }
+    #placeholderPokebattle{
+        background-image: url('http://via.placeholder.com/768.png/56739A/ffffff?text=Pokebattle');
+    }
+    #placeholderCdfRobotique{
+        background-image: url('http://via.placeholder.com/768.png/56739A/ffffff?text=CDF de Robotique');
+    }
+    #placeholderGeeps{
+        background-image: url('http://via.placeholder.com/768.png/56739A/ffffff?text= Visite GEEPS');
+    }
+    #placeholderCommandeRobot{
+        background-image: url('http://via.placeholder.com/768.png/56739A/ffffff?text=Commande robot');
+    }
     /* General */
     h1{
         width: 100%;
@@ -347,10 +404,13 @@ footer {
     }
 
     /* Competences */
-    #competences{
+    #skillsLayout{
         width: initial;
     }
 
     /* Contact */
-
+    #formulaire{
+        width: initial;
+    }
 }
+
