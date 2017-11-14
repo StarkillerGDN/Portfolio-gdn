@@ -14,7 +14,6 @@
         //Envoi du mail
         mail($to, $sujet, $corps_message, $header);
     }
-
     //Fonction de vérification des champs contre les hacks
     function test_donnees($data){
         $data = trim($data);
