@@ -1,7 +1,6 @@
 html,
 body {
     height: 100%;
-    position: relative; 
 }
 /************************* Carousel *************************/
 .carousel,
@@ -99,7 +98,7 @@ body {
 #djangoLogo,
 #htmlLogo,
 #cssLogo{
-    width: 30px; 
+    max-width: 30px; 
     height: 30px; 
     margin-bottom: 8px; 
     margin-left: 15px;
@@ -213,6 +212,15 @@ h1{
 }
 #quiSuisJe p{
     text-align: justify;
+}
+#prism{
+    font-weight: bold;
+    text-decoration: none;
+    color: #0B1616;
+}
+#prism:hover{
+    text-decoration: none;
+    color: #56739A;
 }
 .img-circle{ /* Photo de profil  */ 
     width: 200px;
@@ -347,13 +355,34 @@ textarea{
 #echec{
     width: 92%;
     margin-left: 4%;
-    /*visibility: hidden;
-    display: none; */
-}
 
+}
+#check{
+    color: green !important;
+    width: 30px;
+    padding-top: 4px;
+}
+.dangerIcone{
+    color: red !important;
+    width: 30px;
+    padding-top: 4px;  
+}
+#maps{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 /************************* Footer *************************/
 footer {
     margin: 50px 0;
+}
+#textFooter p{
+    font-weight: bold;
+    text-align: center;
 }
 
 /************************* Media queries *************************/
@@ -412,5 +441,5 @@ footer {
     #formulaire{
         width: initial;
     }
-}
 
+}

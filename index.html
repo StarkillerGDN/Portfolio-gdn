@@ -58,13 +58,13 @@
             <div class="collapse navbar-collapse" id="myNav">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#presentation">Présentation</a>
+                        <a class="scrollJs" href="#presentation">Présentation</a>
                     </li>
                     <li>
-                        <a href="#competences">Mes compétences</a>
+                        <a class="scrollJs" href="#competences">Mes compétences</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a class="scrollJs" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -326,8 +326,8 @@
                 <div class="row">
                     <div class="col-md-12" id="quiSuisJe" > <!-- A CHANGER, aligner au milieu quand c'est un petit ecran -->
                         <h2>Qui suis je ?</h2>
-                        <p>Mon nom est <b>Geoffrey DAHURON</b>, je suis actuellement étudiant en première année de Master en ingénierie du Web,
-                        à l'ESGI. Je fais du développement web depuis maintenant un an et ça me passionne de plus en plus !</p>
+                        <p>Mon nom est <b>Geoffrey DAHURON</b>, je suis actuellement jeune diplômé d'une Licence Pro <a href="http://www.iut-orsay.u-psud.fr/fr/formations/licences_professionnelles/info_lp_prism.html" target="_blank" id="prism">PRISM</a>,
+                        effectué à l'IUT d'Orsay. Je fais du développement web depuis maintenant un an et ça me passionne de plus en plus !</p>
                         <p>Je suis également un grand fan de Star Wars, de jeux vidéos et de hardware.</p>
                         <p>Je suis motivé, rigoureux, persévérant et désireux d'apprendre. </p>  
                     </div>
@@ -444,16 +444,12 @@
             <div class="col-md-12">
                 <h1><span class="fa fa-envelope-o"></span>Contactez-moi</h1>
                 <hr class="lineTitle">
+                <div class="col-md-12 hidden-xs">
+                    <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41995.312114068394!2d2.4140311861006287!3d48.86379721208396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d45530eef85%3A0xa3aa7c6db0c45bf0!2s93100+Montreuil!5e0!3m2!1sfr!2sfr!4v1510423798856" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
                 <div id="formulaire" class="row">
-                    <div id="succes" class="alert alert-success alert-dismissable col-md-12">
-                        <a href="#" class="close" data-dismiss="alert" aria-label="close" >&times;</a>
-                        <strong>Succès!</strong> Votre message a bien été envoyé. <!-- Mettre icone font awesomme -->
-                    </div>
-                    <div id="echec" class="alert alert-danger alert-dismissable col-md-12">
-                        <a href="#" class="close" data-dismiss="alert" aria-label="close" >&times;</a>
-                        <strong>Attention !</strong>Tout les champs doivent être rempli.
-                    </div>
-                    <form  class="col-md-12" action="contact/contact.php" method="post">
+                    <div id="messageForm"></div>
+                    <form  class="col-md-12">
                         <div class="form-group col-md-6">
                             <input class="form-control" type="text" name="nomPrenom" id="nomPrenom" placeholder="Nom et Prenom">
                         </div>
@@ -467,24 +463,42 @@
                             <button type="submit" class="btn btn-primary" id="submit">Envoyer</button>
                         </div>
                     </form>
+                </div>
             </div>
         </section>
         
         <!-- Footer -->
         <footer>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-md-12" id="textFooter">
                     <p>Copyright &copy; 2017 Geoffrey DAHURON. Conçu par Geoffrey DAHURON</p>
+                </div>
+                <div class="col-xs-12 " style="text-align: center;" id="social">
+
+                    <a target="_blank" href="https://www.facebook.com/geoffrey.dahuron.7">
+                        <svg id="facebook" style="width:40px;height:40px" viewBox="0 0 24 24">
+                            <path fill="#56739A" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M18,5H15.5A3.5,3.5 0 0,0 12,8.5V11H10V14H12V21H15V14H18V11H15V9A1,1 0 0,1 16,8H18V5Z" />
+                        </svg>
+                    </a>
+
+                    <a target="_blank" href="https://www.linkedin.com/in/geoffrey-dahuron-a101aa14a">
+                        <svg id="linkedin" style="width:40px;height:40px" viewBox="0 0 24 24">
+                                <path fill="#56739A" d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z" />
+                        </svg>
+                    </a>
+    
                 </div>
             </div>
             <!-- /.row -->
         </footer>
-
     </div>
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
