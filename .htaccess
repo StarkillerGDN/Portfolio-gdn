@@ -1,0 +1,7 @@
+# Activation de mod_rewrite
+RewriteEngine on 
+# On récrit les urls sans www
+RewriteCond %{HTTP_HOST} !^www.geogeoquidev.fr$
+RewriteRule ^(.*) http://www.geogeoquidev.fr/$1 [QSA,L,R=301] 
+#Redirection
+RewriteRule ^/$ /index.html [R] 
