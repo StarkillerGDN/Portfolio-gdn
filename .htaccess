@@ -1,21 +1,4 @@
-# Activation de mod_rewrite
-RewriteEngine on 
+# URL rewriting module deactivation 
+RewriteEngine off 
 
-# On récrit les urls sans www
-RewriteCond %{HTTP_HOST} !^www.geogeoquidev.fr$
-RewriteRule ^(.*) http://www.geogeoquidev.fr/$1 [QSA,L,R=301] 
-
-#Redirection
-RewriteRule ^/$ /index.html [R] 
-RewriteRule ^/doc/$ /index.html [R] 
-RewriteRule ^/img/$ /index.html [R] 
-RewriteRule ^/contact/$ /index.html [R] 
-RewriteRule ^/ico/$ /index.html [R] 
-RewriteRule ^/js/$ /index.html [R] 
-RewriteRule ^/css/$ /index.html [R] 
-RewriteRule ^/fonts/$ /index.html [R] 
-
-#Empecher le duplicate content
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.geogeoquidev.fr/$1 [R,L]
 
