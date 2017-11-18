@@ -47,12 +47,11 @@
         $mail->addAddress('geoffreyd21@hotmail.fr', 'Geoffrey DAHURON');    
         $mail->addReplyTo('noreply@geogeoquidev.fr', 'GeogeoROBOT');
     
-    
         //Contenu
         $mail->isHTML(true);                                  // Email au format HTML
         $mail->Subject = 'Mail envoyer depuis geogeoquidev.fr';
-        $mail->Body    = 'TEST';
-        $mail->AltBody = 'TEST';
+        $mail->Body    = 'Vous avez reçu un message.<br><br>Voici le détail :<br>- Nom et Prénom : $nomPrenom <br>- E-mail : $mail <br>- Message : <br>$message';
+        $mail->AltBody = 'Vous avez reçu un message.\r\n\r\nVoici le détail :\r\n- Nom et Prénom : $nomPrenom\r\n- E-mail : $mail\r\n- Message :\r\n$message';
         
         //Envoi du mail
         $mail->send();
