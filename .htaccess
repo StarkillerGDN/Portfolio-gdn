@@ -1,11 +1,4 @@
 #Empeche l'acces aux dossiers 
-order allow,deny
-allow from all
+
 options -indexes
 
-# REDIRECTION TO HTTPS
-RewriteEngine On
-RewriteCond %{SERVER_PORT} 80
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 
-
-#Pages d'erreurs
