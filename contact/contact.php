@@ -26,6 +26,11 @@
     require '../vendor/autoload.php';
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
+        //Récupération des champs et vérifs contre les injections
+        $nomPrenom = test_donnees($_POST["nomPrenom"]);
+        $mail = test_donnees($_POST["mail"]);
+        $message = test_donnees($_POST["message"]);
+
         $mail = new PHPMailer(false);                             // TRUE = activer les exceptions
         //Server settings
         $mail->SMTPDebug = 0;                                 //Desactiver le Debug pour la prod
@@ -36,11 +41,6 @@
         $mail->Password = '35JCXtUEPeUE';                           // Password
         $mail->SMTPSecure = 'tls';                            // TLS encrypte
         $mail->Port = 587;                                    // Port TLS
-        
-        //Récupération des champs et vérifs contre les injections
-       // $nomPrenom = test_donnees($_POST["nomPrenom"]);
-        //$mail = test_donnees($_POST["mail"]);
-        //$message = test_donnees($_POST["message"]);
 
         //Entête
         $mail->setFrom('noreply@geogeoquidev.fr', 'GeogeoROBOT');
