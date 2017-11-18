@@ -50,7 +50,7 @@
         //Contenu
         $mail->isHTML(true);                                  // Email au format HTML
         $mail->Subject = 'Mail envoyer depuis geogeoquidev.fr';
-        $mail->Body    = 'Vous avez reçu un message.<br><br>Voici le détail :<br>- Nom et Prénom : <?php $nomPrenom ?> <br>- E-mail : <?php $email ?> <br>- Message : <br> <?php $message ?>';
+        $mail->Body    = 'Vous avez reçu un message.<br><br>Voici le détail :<br>- Nom et Prénom : ' .$nomPrenom.'<br>- E-mail : '  .$email.'<br>- Message : <br>' .$message;
         $mail->AltBody = 'Vous avez reçu un message.\r\n\r\nVoici le détail :\r\n- Nom et Prénom : $nomPrenom\r\n- E-mail : $email\r\n- Message :\r\n$message';
         
         //Envoi du mail
