@@ -28,7 +28,7 @@
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         //Récupération des champs et vérifs contre les injections
         $nomPrenom = test_donnees($_POST["nomPrenom"]);
-        $mail = test_donnees($_POST["mail"]);
+        $email = test_donnees($_POST["mail"]);
         $message = test_donnees($_POST["message"]);
 
         $mail = new PHPMailer(false);                             // TRUE = activer les exceptions
@@ -50,8 +50,8 @@
         //Contenu
         $mail->isHTML(true);                                  // Email au format HTML
         $mail->Subject = 'Mail envoyer depuis geogeoquidev.fr';
-        $mail->Body    = 'Vous avez reçu un message.<br><br>Voici le détail :<br>- Nom et Prénom : $nomPrenom <br>- E-mail : $mail <br>- Message : <br>$message';
-        $mail->AltBody = 'Vous avez reçu un message.\r\n\r\nVoici le détail :\r\n- Nom et Prénom : $nomPrenom\r\n- E-mail : $mail\r\n- Message :\r\n$message';
+        $mail->Body    = 'Vous avez reçu un message.<br><br>Voici le détail :<br>- Nom et Prénom : <?php $nomPrenom ?> <br>- E-mail : <?php $email ?> <br>- Message : <br> <?php $message ?>';
+        $mail->AltBody = 'Vous avez reçu un message.\r\n\r\nVoici le détail :\r\n- Nom et Prénom : $nomPrenom\r\n- E-mail : $email\r\n- Message :\r\n$message';
         
         //Envoi du mail
         $mail->send();
