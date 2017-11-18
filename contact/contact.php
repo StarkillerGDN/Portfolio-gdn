@@ -22,7 +22,7 @@
         return $data;
     } */
 
-
+    use PHPMailer\PHPMailer\PHPMailer;
     require '../vendor/autoload.php';
 
     $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
