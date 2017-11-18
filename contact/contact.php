@@ -44,7 +44,7 @@
 
         //Entête
         $mail->setFrom('noreply@geogeoquidev.fr', 'GeogeoROBOT');
-        $mail->addAddress('geoffrey211295@gmail.com', 'Geoffrey DAHURON');    
+        $mail->addAddress('geoffreyd21@hotmail.fr', 'Geoffrey DAHURON');    
         $mail->addReplyTo('noreply@geogeoquidev.fr', 'GeogeoROBOT');
     
     
