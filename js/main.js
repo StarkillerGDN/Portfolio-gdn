@@ -16,7 +16,7 @@ $(document).ready(function(e) {
     var index=0;
     $(document).scroll(function(){
         var top = $('#competences').height()-$(window).scrollTop();
-        console.log(top)
+        //console.log(top)
         if(top<-300){
             if(index==0){
                 loadSkillbar();
@@ -69,13 +69,13 @@ $('form').submit(
                         }
                     })
                     .done(function(){
-                        console.log("Envoi reussi à contact.php");
+                        //console.log("Envoi reussi à contact.php"); //PROD
                         //Message SUCCES
                        $("#messageForm").html("<div id='succes' class='alert alert-success alert-dismissable col-md-12'><a href='#'class='close' data-dismiss='alert' aria-label='close' >&times;</a><i id='check' class='fa fa-check' aria-hidden='true'></i>Le mail a bien été envoyé</div>");
                     })
                     .fail(function(jqxhr, textStatus, error){
-                        var erreur = textStatus + ", " + error;
-                        console.log(erreur);
+                        //var erreur = textStatus + ", " + error; PROD
+                        //console.log(erreur);
                     })
                     //Clear champs
                     $('input[name=nomPrenom]').val("");
