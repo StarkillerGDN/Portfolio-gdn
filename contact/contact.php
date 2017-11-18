@@ -38,9 +38,9 @@
         $mail->Port = 587;                                    // Port TLS
         
         //Récupération des champs et vérifs contre les injections
-        $nomPrenom = test_donnees($_POST["nomPrenom"]);
-        $mail = test_donnees($_POST["mail"]);
-        $message = test_donnees($_POST["message"]);
+       // $nomPrenom = test_donnees($_POST["nomPrenom"]);
+        //$mail = test_donnees($_POST["mail"]);
+        //$message = test_donnees($_POST["message"]);
 
         //Entête
         $mail->setFrom('noreply@geogeoquidev.fr', 'GeogeoROBOT');
