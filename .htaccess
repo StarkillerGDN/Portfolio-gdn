@@ -1,4 +1,11 @@
 #Empeche l'acces aux dossiers 
-
+order allow,deny
+allow from all
 options -indexes
 
+# REDIRECTION TO HTTPS
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.geogeoquid.fr/$1 [R=301,L]
+
+#Pages d'erreurs
