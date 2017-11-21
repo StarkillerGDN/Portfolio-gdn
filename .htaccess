@@ -4,8 +4,8 @@ allow from all
 options -indexes
 
 # REDIRECTION TO HTTPS
-RewriteEngine On
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.geogeoquidev.fr/$1 [R=301,L]
+#RewriteEngine On
+#RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)$ https://www.geogeoquidev.fr/$1 [R=301,L]
 
 #Pages d'erreurs
