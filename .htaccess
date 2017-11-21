@@ -8,4 +8,6 @@ RewriteEngine Off
 #RewriteCond %{SERVER_PORT} 80
 #RewriteRule ^(.*)$ https://www.geogeoquidev.fr/$1 [R=301,L]
 
+RewriteRule ^(.*)$ http://www.geogeoquidev.fr/$1 [R=301,L]
+
 #Pages d'erreurs
