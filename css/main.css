@@ -24,22 +24,22 @@ body {
     -o-background-size: cover;
 }
     #placeholderBookMe{
-        background-image: url('http://via.placeholder.com/1920x1080.png/56739A/ffffff?text=Book-me');
+        background-image: url('https://via.placeholder.com/1920x1080.png/56739A/ffffff?text=Book-me');
     }
     #placeholderChallengeMe{
-        background-image: url('http://via.placeholder.com/1920x1080.png/56739A/ffffff?text=Challenge Me');
+        background-image: url('https://via.placeholder.com/1920x1080.png/56739A/ffffff?text=Challenge Me');
     }
     #placeholderPokebattle{
-        background-image: url('http://via.placeholder.com/1920x1080.png/56739A/ffffff?text=Pokebattle');
+        background-image: url('https://via.placeholder.com/1920x1080.png/56739A/ffffff?text=Pokebattle');
     }
     #placeholderCdfRobotique{
-        background-image: url('http://via.placeholder.com/1920x1080.png/56739A/ffffff?text=CDF de Robotique');
+        background-image: url('https://via.placeholder.com/1920x1080.png/56739A/ffffff?text=CDF de Robotique');
     }
     #placeholderGeeps{
-        background-image: url('http://via.placeholder.com/1920x1080.png/56739A/ffffff?text= Visite GEEPS');
+        background-image: url('https://via.placeholder.com/1920x1080.png/56739A/ffffff?text= Visite GEEPS');
     }
     #placeholderCommandeRobot{
-        background-image: url('http://via.placeholder.com/1920x1080.png/56739A/ffffff?text=Commande robot');
+        background-image: url('https://via.placeholder.com/1920x1080.png/56739A/ffffff?text=Commande robot');
     }
 /************************* Modal *************************/
 .lienModal{
