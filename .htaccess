@@ -5,12 +5,7 @@ options -indexes
 
 # REDIRECTION TO HTTPS
 RewriteEngine On
-RewriteCond %{HTTP:X-Forwarded-Port} 80
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
-
-Options +FollowSymlinks
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www.geogeoquidev.fr$
-RewriteRule ^(.*) https://geogeoquidev.fr/$1 [QSA,L,R=301]
+RewriteCond %{SERVER_NAME} =geogeoquidev.fr
+RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
 
 #Pages d'erreurs
