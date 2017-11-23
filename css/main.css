@@ -8,15 +8,18 @@ body {
     display: block;
 }
 .infosModal i{
+    color: #0B1616;
     position: absolute; 
     margin-left: 15px;
 }
 .modal-header, .modal-header h2{
-    background-color: #56739A;
+    background-color: #1560BD;
     text-align: center;
-    color: white !important;
+    color: #F0C300 !important;
 }
-
+.modal-body h3, .modal-body p{
+    color: #0B1616 !important;
+}
 .modal-content img{
     width: 100%;
 }
@@ -30,7 +33,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color:  #56739A;
+    background-color:  #1560BD;
 }
 .langages{
     display: inline-block;
@@ -83,8 +86,11 @@ body {
     margin-bottom: 8px; 
     margin-left: 15px;
 }
+#pige{
+    color: #1560BD;
+}
 #pige:hover{
-    color: #56739A;
+    color: #F0C300;
 }
 /************************* Navigation *************************/
 .navbar{
@@ -302,7 +308,76 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
-
+#projetLayout{
+    border: 1px solid red;
+}
+.container--box{
+    padding: 1em 0;
+    float: left;
+    width: 50%;
+}
+.container--box .title{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.content--box {
+    background:#1560BD;
+    border-radius:5px;
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+.content--box .content-overlay {
+    background: rgba(0,0,0,1);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+.content--box:hover .content-overlay{
+    opacity: 0.51;
+}
+.content-image{
+    width: 100%;
+}
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.content--box:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+.content-details p{
+    color: #fff;
+    font-size: 1em;
+}
+.fadeIn-bottom{
+    top: 80%;
+}
 /************************* Contact *************************/
 #contact{
     margin-left: auto;
@@ -343,7 +418,7 @@ textarea{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 72%;
     height: 350px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -360,25 +435,6 @@ footer {
 
 /************************* Media queries *************************/
 @media (max-width: 768px) {
-    /* Modal */
-    #placeholderBookMe{
-        background-image: url('http://via.placeholder.com/768.png/56739A/ffffff?text=Book-me');
-    }
-    #placeholderChallengeMe{
-        background-image: url('http://via.placeholder.com/768.png/56739A/ffffff?text=Challenge Me');
-    }
-    #placeholderPokebattle{
-        background-image: url('http://via.placeholder.com/768.png/56739A/ffffff?text=Pokebattle');
-    }
-    #placeholderCdfRobotique{
-        background-image: url('http://via.placeholder.com/768.png/56739A/ffffff?text=CDF de Robotique');
-    }
-    #placeholderGeeps{
-        background-image: url('http://via.placeholder.com/768.png/56739A/ffffff?text= Visite GEEPS');
-    }
-    #placeholderCommandeRobot{
-        background-image: url('http://via.placeholder.com/768.png/56739A/ffffff?text=Commande robot');
-    }
     /* General */
     h1{
         width: 100%;
@@ -410,9 +466,26 @@ footer {
         width: initial;
     }
 
+    /* PROJETS */
+    .card{
+        width: 99%;
+    }
+
     /* Contact */
     #formulaire{
         width: initial;
     }
 
 }
+@media screen and (max-width: 640px){
+    .container--box{
+      display: block;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 900px){
+    .container--box{
+      width: 33.33333%;
+    }
+  }

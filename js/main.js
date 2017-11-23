@@ -10,7 +10,7 @@ $(document).ready(function(e) {
     $(document).scroll(function(){
         var top = $('#competences').height()-$(window).scrollTop();
         //console.log(top)
-        if(top<-300){
+        if(top< 842){
             if(index==0){
                 loadSkillbar();
             }
