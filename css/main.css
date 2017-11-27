@@ -309,7 +309,7 @@ h1{
     margin-right: auto;
 }
 #projetLayout{
-    border: 1px solid red;
+    border: 1px solid red; 
 }
 .container--box{
     padding: 1em 0;
@@ -351,6 +351,7 @@ h1{
     width: 100%;
 }
 .content-details {
+    display: block;
     position: absolute;
     text-align: center;
     padding-left: 1em;
