@@ -309,7 +309,8 @@ h1{
     margin-right: auto;
 }
 #projetLayout{
-    border: 1px solid red; 
+    width: 77%;
+    margin: auto;
 }
 .container--box{
     padding: 1em 0;
@@ -479,14 +480,13 @@ footer {
 
 }
 @media screen and (max-width: 640px){
+    #projetLayout{
+        width: initial;
+        margin: initial;
+    }
     .container--box{
       display: block;
       width: 100%;
     }
   }
 
-  @media screen and (min-width: 900px){
-    .container--box{
-      width: 33.33333%;
-    }
-  }
