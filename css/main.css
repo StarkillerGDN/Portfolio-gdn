@@ -179,8 +179,11 @@ h1{
 }
 
 #quiSuisJe{ 
-    width: 50%;
-    margin-left: 25%;
+    width: 70%;
+    margin-left: 15%;
+}
+#quiSuisJe h2{
+    text-align: center;
 }
 #quiSuisJe p{
     text-align: justify;
