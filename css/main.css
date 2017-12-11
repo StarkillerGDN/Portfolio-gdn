@@ -122,7 +122,12 @@ body {
     color: white !important;
     background: #318CE7;
 }
-
+.dropdown-menu{
+    background-color: #1560BD;
+}
+.dropdown-menu li a:hover{
+    background-color: #318CE7;
+}
 /************************* General (content) *************************/
 #pageContent{
     padding-top: 50px;
@@ -171,7 +176,6 @@ h1{
     float: left;
     color: #FEFEFE;
 }
-
 /************************* Presentation *************************/
 #presentation{   
     margin-left: auto;
