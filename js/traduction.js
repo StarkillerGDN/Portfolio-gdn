@@ -1,11 +1,12 @@
 $(document).ready(
     function(){
-        $('#en').click(
+        $('.en').click(
             function(){
                 var script = document.createElement('script');
                 script.src = 'js/main.js';
-                //Modification bouton + image
-                
+                //changement de bouton
+                $("#btnFr").css({"display":"none", "visibility":"hidden"});
+                $("#btnEn").css({"display":"block", "visibility":"visible"});
                 
                 //Nav
                 $("a:contains('Présentation')").text("Presentation");
@@ -82,13 +83,14 @@ $(document).ready(
 
             }
         )
-        $('#fr').click(
+        $('.fr').click(
             function(){
                 var script = document.createElement('script');
                 script.src = 'js/main.js';
 
                 //Modification bouton + image
-                
+                $("#btnFr").css({"display":"block", "visibility":"visible"});
+                $("#btnEn").css({"display":"none", "visibility":"hidden"});
                 
                 //Nav
                 $("a:contains('Presentation')").text("Présentation");

@@ -129,7 +129,20 @@ body {
 .dropdown-menu a:hover{
     background-color: #318CE7 !important;
 }
+#btnEn, #btnFr{
+    float: right;
+    width: 21px;
+    height: 24px;
+    margin-top: 12px;
+    background-color: #1560BD;
+}
+#btnEn{
+    position: fixed;
+    right: 56px;
+    display: none;
+    visibility: hidden;
 
+}
 /************************* General (content) *************************/
 #pageContent{
     padding-top: 50px;
