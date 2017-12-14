@@ -22,7 +22,7 @@
 
     <!-- Custom icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link rel="stylesheet" href="flag-icon-css-master/css/flag-icon.min.css">
     <!-- Custom fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
@@ -46,10 +46,12 @@
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav" id="btnNav">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar test"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
+                    <span class="icon-bar"></span>
+                </button>  
+                <button type="button" class="btn navbar-btn visible-xs flag-icon-background flag-icon-fr en" id="btnFr"></button>
+                <button type="button" class="btn navbar-btn visible-xs flag-icon-background flag-icon-gb fr" id="btnEn"></button>
                 <a class="navbar-brand textillate" href="#"><span>Geogeo qui dev'</span></a>
 
             </div>
@@ -63,10 +65,18 @@
                         <a class="scrollJs" href="#competences">Mes compétences</a>
                     </li>
                     <li>
-                        <a class="scrollJs" href="#projets">Mes Projets</a>
+                        <a class="scrollJs" href="#projets">Mes projets</a>
                     </li>
                     <li>
                         <a class="scrollJs" href="#contact">Contact</a>
+                    </li>
+
+                    <li class="dropdown hidden-xs">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Langues<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="fr">Français</a></li>
+                            <li><a href="#" class="en">Anglais</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -125,11 +135,11 @@
                         </p>
                         <div class="infosModal">
                             <h3>Cadre : <i class="fa fa-university" aria-hidden="true"></i></h3> 
-                            <h3>Date : avril 2017 à mai 2017</h3>
+                            <h3>Date : avril à mai 2017</h3>
                             <h3 class="langages">Langages / Framework : </h3> 
                             <img src="img/djangoLogo.png" title="Framework Django" alt="logo langage django" id="djangoLogo"> 
                             <img src="img/htmlLogo.png" title="HTML5" alt="logo langage html" id="htmlLogo"> 
-                            <img src="img/cssLogo.png" title="CCS3" alt="logo langage css" id="cssLogo">
+                            <img src="img/cssLogo.png" title="CSS3" alt="logo langage css" id="cssLogo">
                             <img src="img/bootstrapLogo.jpg" title="Bootstrap" alt="logo bootstrap" id="bootstrapLogo">
                         </div>
                     </div>
@@ -284,7 +294,7 @@
         <!-- Section mes compétences -->
         <section class="row" id="competences">
             <div class="col-md-12">
-                <h1><span class="fa fa-check-circle-o"></span>Mes compétences</h1>
+                <h1><span class="fa fa-check-circle-o"></span>Mes Compétences</h1>
                 <hr class="lineTitle">
                 <div id="skillsLayout">
                     <div class="row">
@@ -392,7 +402,7 @@
                                     <img class="content-image" src="img/bookmeCover.png" alt="image du projet book me">
                                     <div class="content-details fadeIn-bottom">
                                         <h3><i style="display: block; padding-left: 45%;"  class="fa fa-search-plus" aria-hidden="true"></i></h3><br><br>
-                                        <p>Projet pour un interminent du spectacle de M6</p>
+                                        <p>Projet pour un intermittent du spectacle de M6</p>
                                     </div>
                                 </a>
                             </div>
@@ -401,13 +411,13 @@
                         <div class="container--box">
                             <div class="content--box">
                                 <a href="#" data-toggle="modal" data-target="#geeps">
-                                    <h3 class="title">Formulaire de visite GEEPS</h3>
+                                    <h3 class="title">Formulaire de visite</h3>
                                     <!-- effet slider -->
                                     <div class="content-overlay"></div>
                                     <img class="content-image" src="img/geepsCover.png" alt="image du projet geeps">
                                     <div class="content-details fadeIn-bottom">
                                         <h3 ><i style="display: block; padding-left: 45%;" class="fa fa-search-plus" aria-hidden="true"></i></h3><br><br>
-                                        <p class="content-text">Formulaire de visite pour le laboratoire du GEEPS, à Orsay</p>
+                                        <p>Formulaire de visite pour le laboratoire du GEEPS, à Orsay</p>
                                     </div>
                                 </a>
                             </div>
@@ -422,7 +432,7 @@
                                     <img class="content-image" src="img/challengemeCover.png" alt="image du Challenge-me">
                                     <div class="content-details fadeIn-bottom">
                                         <h3><i style="display: block; padding-left: 45%;" class="fa fa-search-plus" aria-hidden="true"></i></h3><br><br>
-                                        <p class="content-text">Jeu android fait avec Android Studio</p>
+                                        <p>Jeu android fait avec Android Studio</p>
                                     </div>
                                 </a>
                             </div>
@@ -437,7 +447,7 @@
                                     <img class="content-image" src="img/pokebattleCover.png" alt="image du projet Pokebattle">
                                     <div class="content-details fadeIn-bottom">
                                         <h3><i style="display: block; padding-left: 45%;" class="fa fa-search-plus" aria-hidden="true"></i></h3><br><br>
-                                        <p class="content-text">Jeu android réalisé avec AppInventor</p>
+                                        <p>Jeu android réalisé avec AppInventor</p>
                                     </div>
                                 </a>
                             </div>
@@ -452,7 +462,7 @@
                                     <img class="content-image" src="img/cdfCover.png" alt="image du projet cdf de robotique">
                                     <div class="content-details fadeIn-bottom">
                                         <h3><i style="display: block; padding-left: 45%;" class="fa fa-search-plus" aria-hidden="true"></i></h3><br><br>
-                                        <p class="content-text">2 robots capables de réaliser divers objectifs</p>
+                                        <p>2 robots capables de réaliser divers objectifs</p>
                                     </div>
                                 </a>
                             </div>
@@ -461,13 +471,17 @@
                         <div class="container--box">
                             <div class="content--box">
                                 <a href="#" data-toggle="modal" data-target="#commanderobot">
+<<<<<<< HEAD
                                     <h3 class="title">Commande pour robot</h3>
+=======
+                                    <h3 class="title">Commande robot</h3>
+>>>>>>> gdn
                                     <!-- effet slider -->
                                     <div class="content-overlay"></div>
                                     <img class="content-image" src="img/robotCover.png" alt="image du projet robot ramasseur de balles">
                                     <div class="content-details fadeIn-bottom">
                                         <h3><i style="display: block; padding-left: 45%;" class="fa fa-search-plus" aria-hidden="true"></i></h3><br><br>
-                                        <p class="content-text">Application de contôle d'un robot ramasseur de balles</p>
+                                        <p>Application de contôle d'un robot ramasseur de balles</p>
                                     </div>
                                 </a>
                             </div>
@@ -553,6 +567,7 @@
     <script src="js/jquery.textillate.js"></script>
     <!-- script js perso -->
     <script src="js/main.js"></script>
+    <script src="js/traduction.js"></script>
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/6240c762c3.js"></script>
     <!-- SWIPE Jquery -->
