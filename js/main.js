@@ -17,7 +17,7 @@ $(document).ready(function(e) {
             index++;
         }
     })
-});
+}); 
 
 function loadSkillbar(){
     $('.skillbar').each(function(){

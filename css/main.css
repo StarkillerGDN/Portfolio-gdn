@@ -125,9 +125,11 @@ body {
 .dropdown-menu{
     background-color: #1560BD;
 }
-.dropdown-menu li a:hover{
-    background-color: #318CE7;
+.dropdown a:focus,
+.dropdown-menu a:hover{
+    background-color: #318CE7 !important;
 }
+
 /************************* General (content) *************************/
 #pageContent{
     padding-top: 50px;
@@ -497,3 +499,14 @@ footer {
     }
   }
 
+@media screen and (max-width: 992px){
+    /*Nav police taille*/
+
+    #myNav a{
+        font-size: 14px;
+    }
+
+    .navbar-header span{ /* "Geogeo qui dev" */
+        font-size: 24px;
+    }
+}
